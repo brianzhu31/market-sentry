@@ -38,7 +38,7 @@ pinecone==5.3.1
 pinecone-plugin-inference==1.1.0
 pinecone-plugin-interface==0.0.7
 propcache==0.2.0
-psycopg2-binary==2.9.9
+psycopg2-binary>=2.9.9
 pycparser==2.22
 pydantic==2.9.2
 pydantic_core==2.23.4
