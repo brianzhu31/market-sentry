@@ -1,9 +1,8 @@
-"use server";
-
-import { MainGraph } from "./main-graph";
-import { SearchBar } from "./search-bar";
-import { LearnMoreText } from "./learn-more";
-import { DemoSection } from "./demo-section";
+import { MainGraph } from "./main-graph"
+import { SearchBar } from "./search-bar"
+import { LearnMoreText } from "./learn-more"
+import { DemoSection } from "./demo-section"
+import { ApiAlert } from "./api-alert"
 
 export default async function LandingPage() {
   return (
@@ -13,9 +12,7 @@ export default async function LandingPage() {
           <div className="flex flex-col gap-4 animate-fade-up w-full max-w-[550px] mb-[50%] lg:mb-0">
             <div className="flex flex-col gap-2">
               <p className="font-bold text-5xl">Market Sentry</p>
-              <p className="text-slate-500 text-xl">
-                AI-powered financial companion
-              </p>
+              <p className="text-slate-500 text-xl">AI-powered financial companion</p>
             </div>
             <SearchBar />
           </div>
@@ -43,11 +40,10 @@ export default async function LandingPage() {
       </section>
       <footer className="bg-background py-8 px-4 border-t">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground mb-4 md:mb-0">
-            &copy; 2024 All rights reserved.
-          </p>
+          <p className="text-muted-foreground mb-4 md:mb-0">&copy; 2024 All rights reserved.</p>
         </div>
       </footer>
+      <ApiAlert />
     </div>
-  );
+  )
 }

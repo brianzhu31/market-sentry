@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import { CompaniesProvider } from "@/context/companies-context";
-import { Navbar } from "./components/navbar";
 import { UserSessionProvider } from "@/context/user-session-context";
 import "./globals.css";
 
