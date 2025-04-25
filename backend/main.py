@@ -5,24 +5,24 @@ from app.tasks import full_update
 from app import app
 
 def create_app():
-    scheduler = BackgroundScheduler()
-    trigger = CronTrigger(
-        year="*", 
-        month="*", 
-        day="*", 
-        hour="0", 
-        minute="0", 
-        timezone="US/Eastern"
-    )
+    # scheduler = BackgroundScheduler()
+    # trigger = CronTrigger(
+    #     year="*",
+    #     month="*", 
+    #     day="*", 
+    #     hour="0", 
+    #     minute="0", 
+    #     timezone="US/Eastern"
+    # )
     
-    scheduler.add_job(
-        func=full_update, 
-        trigger=trigger, 
-        id="full_inference_job"
-    )
+    # scheduler.add_job(
+    #     func=full_update, 
+    #     trigger=trigger, 
+    #     id="full_inference_job"
+    # )
     
-    if not scheduler.running:
-        scheduler.start()
+    # if not scheduler.running:
+    #     scheduler.start()
     
     with app.app_context():
         db.create_all()

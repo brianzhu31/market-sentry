@@ -69,7 +69,7 @@ class ArticleManager:
         article_queries = (
             ArticleModel.query.filter(
                 ArticleModel.ticker == ticker,
-                ArticleModel.published_date >= cutoff_date,
+                # ArticleModel.published_date >= cutoff_date,
             )
             .order_by(ArticleModel.published_date.desc())
             .paginate(page=page, per_page=limit)
