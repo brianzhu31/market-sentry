@@ -14,7 +14,7 @@ export function ApiAlert() {
 
   return isVisible ? (
     <div className="fixed bottom-4 left-4 z-50 max-w-md animate-fade-in">
-      <Alert variant="destructive">
+      <Alert>
         <AlertCircle className="h-4 w-4" />
         <div className="flex justify-between items-start w-full">
           <div>
