@@ -12,6 +12,5 @@ A web application aimed at providing real-time market sentiment analysis to assi
 
 User wants to know the market sentiment of Apple Inc (AAPL). The application will fetch numerous summaries of news articles related to Apple Inc., then utilize a LLM to summarize the information and generate sentiment scores. This feedback educates the user about the company's recent market reputation and assists them with investment decisions.
 
-## APIs used
-
-NewsCatcher API: https://www.newscatcherapi.com/
+## Demo
+[Click here to view the full demo of the project](https://www.youtube.com/watch?v=imoQJjcPCNU)
